@@ -1,0 +1,20 @@
+/* 패딩 top 헤더 높이 보고 정하기 */
+/* color: #ffffff; */
+/* min-height: 100vh; */
+
+.wrap { padding: 5em; }
+
+/* about board */
+.wrap-about { height: 80vh; padding: 10em; display: flex; justify-content: space-between; align-items: center; }
+.wrap-about-left { width: 45%; }
+.wrap-about-left > img { width: 100%; }
+.wrap-about-right { width: 45%; overflow: hidden; }
+/* .about-wrap-left { background-color: cyan; } */
+/* .wrap .about-wrap-right {} */
+
+@media all and (max-width: 768px) {
+  .wrap-about { padding: 0 2em 2em; display: flex; flex-direction: column ;justify-content: space-between; align-items: center; }
+  .wrap-about-left { width: 80%; }
+  .wrap-about-left > img { width: 100%; }
+  .wrap-about-right { width: 80%; overflow: hidden; }
+}
